@@ -13,22 +13,17 @@
 //   buzz
 
 function fizzBuzz(n) {
-  // console.log(5%3);
-  for(let i=1;i <= n; i++){
-    // one line solution
-    // i%15==0 ? console.log('fizzbuzz') : i%3==0 ? console.log('fizz') : i%5==0 ? console.log('buzz') : console.log(i);
-
-    if ( i % 15 === 0 ) {
-      console.log("fizzbuzz")
-    }
-    else if ( i % 3 === 0 ){
-      console.log("fizz")
-    }
-    else if ( i % 5 === 0 ) {
-      console.log("buzz")
-    }
-    else{
-      console.log(i)
+  for (let i = 1; i <= n; i++) {
+    // Is the number a multiple of 3 and 5?
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log('fizzbuzz');
+    } else if (i % 3 === 0) {
+      // Is the number a multiple of 3?
+      console.log('fizz');
+    } else if (i % 5 === 0) {
+      console.log('buzz');
+    } else {
+      console.log(i);
     }
   }
 }
